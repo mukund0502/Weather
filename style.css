@@ -1,22 +1,28 @@
 .viewport {
     min-height: 100vh;
+    /* width: 100vw; */
     background-image: url(./aaa.jpg);
     background-size: cover;
     /* background-size: auto; */
 }
+body{
+    
+}
 
 .present {
+    width: 80vw;
     height: 100vh;
 }
 
 .pastandfuture {
+    /* width: min-content; */
     height: 95vh;
-    width: 35vw;
+    margin-left: auto;
+    /* width: 30vw; */
 }
 
 #temperature {
-    /* padding: 20; */
-    /* font-size: 50px; */
+
 }
 
 .cards {
@@ -25,11 +31,6 @@
     background-color: rgba(153, 170, 185, 0.3);
     transition: all;
     transition-duration: 0.5s;
-}
-
-.cards:hover {
-    width: 73%;
-    height: 28%;
 }
 
 .data {
@@ -44,17 +45,25 @@
     /* background:none; */
 }
 
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
 
-    .pastandfuture{
-        width: 90%;
-        margin: 0px auto 0px auto;
-    }
-}
+    
+} */
 
 @media only screen and (max-width: 600px) {
     .viewport {
+        display: flex;
         flex-direction: column;
+        /* height: 200vh; */
     }
-
+    .present{
+        margin: auto;
+        width: 100vw;
+    }
+    .searchbox{
+        width: 85vw;
+    }
+    .pastandfuture{
+        width: 100vw;
+    }
 }
