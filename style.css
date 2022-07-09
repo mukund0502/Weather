@@ -45,9 +45,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    /* .viewport {
-        flex-direction: column;
-    } */
 
     .pastandfuture{
         width: 90%;
@@ -60,8 +57,4 @@
         flex-direction: column;
     }
 
-    /* .pastandfuture{
-        width: 90%;
-        margin: 100px auto 0px auto;
-    } */
 }
