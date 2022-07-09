@@ -1,47 +1,67 @@
-.viewport{
+.viewport {
     min-height: 100vh;
     background-image: url(./aaa.jpg);
     background-size: cover;
     /* background-size: auto; */
 }
-.present{
+
+.present {
     height: 100vh;
 }
-.pastandfuture{
+
+.pastandfuture {
     height: 95vh;
     width: 35vw;
 }
-#temperature{
+
+#temperature {
     /* padding: 20; */
     /* font-size: 50px; */
 }
-.cards{
+
+.cards {
     /* background-color: rgb(159, 159, 144,0.2); */
-    backdrop-filter:blur(10px);
+    backdrop-filter: blur(10px);
     background-color: rgba(153, 170, 185, 0.3);
     transition: all;
     transition-duration: 0.5s;
 }
-.cards:hover{
+
+.cards:hover {
     width: 73%;
     height: 28%;
 }
-.data{
-    backdrop-filter:blur(10px);
+
+.data {
+    backdrop-filter: blur(10px);
 
     /* background-color: rgb(159, 159, 144,0.5); */
 }
-.searchbox{
-    background-color: rgb(97, 106, 106,0.5);
+
+.searchbox {
+    background-color: rgb(97, 106, 106, 0.5);
     backdrop-filter: blur(10px);
     /* background:none; */
 }
+
 @media only screen and (max-width: 600px) {
-    .viewport{
+    /* .viewport {
         flex-direction: column;
-    }
+    } */
+
     .pastandfuture{
         width: 90%;
-        margin: 100px auto 0px auto;
+        margin: 0px auto 0px auto;
     }
-  }
+}
+
+@media only screen and (max-width: 600px) {
+    .viewport {
+        flex-direction: column;
+    }
+
+    /* .pastandfuture{
+        width: 90%;
+        margin: 100px auto 0px auto;
+    } */
+}
