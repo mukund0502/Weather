@@ -8,12 +8,23 @@
     height: 100vh;
 }
 .pastandfuture{
-    height: 100vh;
+    height: 95vh;
+    width: 35vw;
+}
+#temperature{
+    /* padding: 20; */
+    /* font-size: 50px; */
 }
 .cards{
     /* background-color: rgb(159, 159, 144,0.2); */
     backdrop-filter:blur(10px);
     background-color: rgba(153, 170, 185, 0.3);
+    transition: all;
+    transition-duration: 0.5s;
+}
+.cards:hover{
+    width: 73%;
+    height: 28%;
 }
 .data{
     backdrop-filter:blur(10px);
@@ -30,7 +41,7 @@
         flex-direction: column;
     }
     .pastandfuture{
-        width: 100%;
-        margin-top: 100px;
+        width: 90%;
+        margin: 100px auto 0px auto;
     }
   }
