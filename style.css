@@ -1,0 +1,36 @@
+.viewport{
+    min-height: 100vh;
+    background-image: url(./aaa.jpg);
+    background-size: cover;
+    /* background-size: auto; */
+}
+.present{
+    height: 100vh;
+}
+.pastandfuture{
+    height: 100vh;
+}
+.cards{
+    /* background-color: rgb(159, 159, 144,0.2); */
+    backdrop-filter:blur(10px);
+    background-color: rgba(153, 170, 185, 0.3);
+}
+.data{
+    backdrop-filter:blur(10px);
+
+    /* background-color: rgb(159, 159, 144,0.5); */
+}
+.searchbox{
+    background-color: rgb(97, 106, 106,0.5);
+    backdrop-filter: blur(10px);
+    /* background:none; */
+}
+@media only screen and (max-width: 600px) {
+    .viewport{
+        flex-direction: column;
+    }
+    .pastandfuture{
+        width: 100%;
+        margin-top: 100px;
+    }
+  }
