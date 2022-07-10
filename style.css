@@ -12,22 +12,33 @@
     text-decoration: underline;
     color: brown;
 }
+#option{
+    position:absolute;
+    top:15vh;
+    left: 25vw;
+    z-index: 1;
+    border-radius: 10px;
+    background-color: rgba(207, 225, 225, 0.5);
+    backdrop-filter: blur(10px);
+    /* background-color: rgb(99, 163, 205); */
+}
 .op{
+
     overflow-x: auto;
     padding: 3px;
-    margin: 2px;
-    border-radius: 5px;
-    background-color: rgba(55, 119, 141, 0.2);
-    backdrop-filter: blur(8px);
+    /* margin: 2px; */
+    /* border-radius: 5px; */
+    /* background-color: rgba(55, 119, 141, 0.9); */
+    /* backdrop-filter: blur(8px); */
     width: 23vw;
-    border-radius: 100px;
+    /* border-radius: 100px; */
 }
 body{
     
 }
 
 .present {
-    width: 80vw;
+    width: 100vw;
     height: 100vh;
 }
 

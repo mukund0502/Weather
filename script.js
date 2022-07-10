@@ -52,7 +52,7 @@ btn.addEventListener("click", () => {
     console.log(data);
     var push = "";
     for (let index = 0; index < 5; index++) {
-      push += `<div class="w-full text-center cursor-pointer op text-lg">${data[index].name}, ${data[index].region},${data[index].country}</div>`
+      push += `<div class="text-center cursor-pointer op text-xl">${data[index].name}, ${data[index].region},${data[index].country}</div> `
       option.innerHTML = push;
 
     }
