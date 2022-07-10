@@ -44,7 +44,7 @@ body{
 }
 
 .searchbox {
-    background-color: rgb(97, 106, 106, 0.5);
+    background-color: rgba(207, 225, 225, 0.5);
     backdrop-filter: blur(10px);
 }
 
