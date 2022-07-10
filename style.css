@@ -1,13 +1,17 @@
+body{
+    
+}
 .viewport {
     /* 100vh; */
     /* width: 100vw; */
-    width: fit-content;
+    width: 100vw;
+    background-image: url(./aaa.jpg);
+    background-size: cover; 
     height: 100vh;
     display: flex;
     flex-direction: row;
     /* width: 100vw; */
-    background-image: url(./aaa.jpg);
-    background-size: cover;
+    
     /* background-size: auto; */
 }
 .op:hover{
@@ -25,16 +29,14 @@
     backdrop-filter: blur(10px);
     width: fit-content;
     margin: 0px auto;
-    transition: all;
-    transition-duration: 1s;
+
     /* border */
     /* width: 23vw; */
 
     /* background-color: rgb(99, 163, 205); */
 }
 .op{
-    transition: all;
-    transition-duration: 1s;
+
     /* width: fit-content; */
     margin-top: 10px;
     overflow-x: auto;
@@ -49,13 +51,9 @@
     /* width: 30vw; */
     
 }
-body{
-    
-}
 
 .present {
-    transition: all;
-    transition-duration: 1s;
+
     width: 100vw;
     height: 100vh;
 }
@@ -74,8 +72,6 @@ body{
     /* background-color: rgb(159, 159, 144,0.2); */
     backdrop-filter: blur(10px);
     background-color: rgba(153, 170, 185, 0.3);
-    transition: all;
-    transition-duration: 0.5s;
 }
 
 .data {
@@ -101,7 +97,9 @@ body{
         margin: auto;
         width: 100vw;
     }
-    .searchbox{
+    .searchbox2{
+        margin: auto;
+        position: relative;
         width: 80vw;
     }
     .op{
@@ -112,6 +110,7 @@ body{
         max-width: 100%;
         width: fit-content;
     }
+
 
     /* .pastandfuture{
         margin: auto;
