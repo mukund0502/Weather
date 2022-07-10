@@ -1,6 +1,8 @@
 .viewport {
     /* 100vh; */
     width: 100vw;
+    display: flex;
+    flex-direction: row;
     /* width: 100vw; */
     background-image: url(./aaa.jpg);
     background-size: cover;
@@ -16,7 +18,7 @@ body{
 }
 
 .pastandfuture {
-    min-width: fit-content;
+    width: 30vw;
     height: 95vh;
     margin-left: auto;
 }
@@ -42,7 +44,6 @@ body{
 .searchbox {
     background-color: rgb(97, 106, 106, 0.5);
     backdrop-filter: blur(10px);
-    /* background:none; */
 }
 
 /* @media only screen and (max-width: 600px) {
@@ -52,9 +53,8 @@ body{
 
 @media only screen and (max-width: 600px) {
     .viewport {
-        display: flex;
+        /* display: flex; */
         flex-direction: column;
-        /* height: 200vh; */
     }
     .present{
         margin: auto;
