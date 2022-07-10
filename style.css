@@ -25,12 +25,16 @@
     backdrop-filter: blur(10px);
     width: fit-content;
     margin: 0px auto;
+    transition: all;
+    transition-duration: 1s;
     /* border */
     /* width: 23vw; */
 
     /* background-color: rgb(99, 163, 205); */
 }
 .op{
+    transition: all;
+    transition-duration: 1s;
     /* width: fit-content; */
     margin-top: 10px;
     overflow-x: auto;
@@ -101,11 +105,12 @@ body{
         width: 80vw;
     }
     .op{
-        width: 80vw;
+        /* width: 80vw; */
 
     }
     .option{
-        width: 80vw;
+        max-width: 100%;
+        width: fit-content;
     }
 
     /* .pastandfuture{
