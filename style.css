@@ -37,8 +37,10 @@ body{
 
 .data {
     backdrop-filter: blur(10px);
+}
 
-    /* background-color: rgb(159, 159, 144,0.5); */
+.btn{
+    top: 60px;
 }
 
 .searchbox {
@@ -46,10 +48,6 @@ body{
     backdrop-filter: blur(10px);
 }
 
-/* @media only screen and (max-width: 600px) {
-
-    
-} */
 
 @media only screen and (max-width: 600px) {
     .viewport {
@@ -61,9 +59,10 @@ body{
         width: 100vw;
     }
     .searchbox{
-        width: 85vw;
+        width: 70vw;
     }
     .pastandfuture{
-        width: 100vw;
+        margin: auto;
+        width: 90vw;
     }
 }

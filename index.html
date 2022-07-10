@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="style.css">
     <title>Weather Web App</title>
 </head>
@@ -18,8 +18,8 @@
         
         <div class="present">
             <div class="search w-fit m-auto flex flex-row">
-                <input type="text" name="" placeholder="Search" id="" class="shadow-lg searchbox relative left-5 font-thin text-2xl px-4 pr-10 py-2 w-fit my-16 rounded-full outline-none">
-                <button type="submit" class="btn w-fit p-1 text-xl relative right-5 "><i class="fa fa-search"></i></button>
+                <input type="text" name="search" placeholder="Search" id="searchh" class="shadow-lg searchbox relative left-5 font-thin text-2xl px-4 pr-10 py-2 w-fit my-16 rounded-full outline-none">
+                <div class="btn w-fit p-2 text-xl align-middle relative h-fit right-5" id="btn"><i class="fa fa-search"></i></div>
             </div>
             <div class="data shadow-2xl m-auto rounded-3xl py-4 pb-10 px-10 w-fit  ">
                 <div class=" contai my-10  text-4xl font-thin text-center" id="place">
@@ -28,7 +28,7 @@
                 <div class=" contai my-4 text-3xl w-1/2" id="temperature">
                     45&#176C
                 </div>
-                <img src="./cloudy.png" class="w-1/4 absolute top-28 right-8" alt="">
+                <img src="./cloudy.png" class="w-1/4 absolute top-28 right-8" alt="" id="icon">
                 <!-- <div class="tempnicon flex flex-row">
                     <div class=" contai my-4 text-2xl w-1/2" id="temperature">
                         45 C
