@@ -19,7 +19,7 @@ if (navigator.geolocation) {
 function showPosition(position) {
   console.log("Latitude: " + position.coords.latitude +
     "  Longitude: " + position.coords.longitude);
-  fetch(`http://api.weatherapi.com/v1/forecast.json?key=c43b5d7ce55249009df105521220607&q=${position.coords.latitude},${position.coords.longitude}&aqi=no&alerts=no`).then(res => res.json()).then(data => {
+  fetch(`https://api.weatherapi.com/v1/forecast.json?key=c43b5d7ce55249009df105521220607&q=${position.coords.latitude},${position.coords.longitude}&aqi=no&alerts=no`).then(res => res.json()).then(data => {
     console.log(data);
     value = { "name": data.location.name, "region": data.location.region,  "country": data.location.country, "windspeed": data.current.wind_kph, "humidity": data.current.humidity, "temp": data.current.temp_c, "type": data.current.condition.text, "icon":data.current.condition.icon,};
 
@@ -38,7 +38,7 @@ function setpresent(value) {
 
 btn.addEventListener("click", () => {
   var placename = search.value;
-  fetch(`http://api.weatherapi.com/v1/forecast.json?key=c43b5d7ce55249009df105521220607&q=${placename}&aqi=no&alerts=no`).then(res => res.json()).then(data => {
+  fetch(`https://api.weatherapi.com/v1/forecast.json?key=c43b5d7ce55249009df105521220607&q=${placename}&aqi=no&alerts=no`).then(res => res.json()).then(data => {
     console.log(data);
     value = { "name": data.location.name, "region": data.location.region, "country":data.location.country, "windspeed": data.current.wind_kph, "humidity": data.current.humidity, "temp": data.current.temp_c, "type": data.current.condition.text, "icon":data.current.condition.icon,};
 
