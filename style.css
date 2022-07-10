@@ -8,6 +8,20 @@
     background-size: cover;
     /* background-size: auto; */
 }
+.op:hover{
+    text-decoration: underline;
+    color: brown;
+}
+.op{
+    overflow-x: auto;
+    padding: 3px;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: rgba(55, 119, 141, 0.2);
+    backdrop-filter: blur(8px);
+    width: 23vw;
+    border-radius: 100px;
+}
 body{
     
 }
