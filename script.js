@@ -45,13 +45,22 @@ function setpresent(value) {
 }
 var opp = [];
 btn.addEventListener("click", () => {
-  // option.
+  ll();
+})
+
+search.addEventListener("keyup",()=>{
+  setTimeout(ll,5);
+})
+
+// search.addEventListener("")
+function ll() {
+  option.innerHTML = "";
   var placename = search.value;
 
   fetch(`https://api.weatherapi.com/v1/search.json?key=c43b5d7ce55249009df105521220607&q=${placename}`).then(res => res.json()).then(data => {
     console.log(data);
     var push = "";
-    for (let index = 0; index < 5; index++) {
+    for (let index = 0; index < 8; index++) {
       push += `<div class="text-center cursor-pointer op text-xl">${data[index].name}, ${data[index].region},${data[index].country}</div> `
       option.innerHTML = push;
 
@@ -89,16 +98,13 @@ btn.addEventListener("click", () => {
                 "type": tata.current.condition.text, 
                 "icon":tata.current.condition.icon,};
 
-      setpresent(value);
+      setpresent(value);  
       option.innerHTML = "";
       search.innerHTML = "";
     })
   }
 
-  // opp = op;
-
-
-})
+}
 // console.log(op);
 // console.log(opp.length);
 

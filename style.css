@@ -19,10 +19,11 @@ body{
     color: brown;
 }
 #option{
-    /* position:absolute; */
-    /* top:15vh; */
-    /* left: 35vw; */
-    /* left: 38%; */
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    top: 110px;
     z-index: 1;
     border-radius: 20px;
     background-color: rgba(207, 225, 225, 0.5);
@@ -30,10 +31,6 @@ body{
     width: fit-content;
     margin: 0px auto;
 
-    /* border */
-    /* width: 23vw; */
-
-    /* background-color: rgb(99, 163, 205); */
 }
 .op{
 
@@ -101,10 +98,6 @@ body{
         margin: auto;
         position: relative;
         width: 80vw;
-    }
-    .op{
-        /* width: 80vw; */
-
     }
     .option{
         max-width: 100%;
