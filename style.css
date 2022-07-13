@@ -98,7 +98,7 @@
 
     .present {
         margin: auto;
-        width: 90vw;
+        width: 80vw;
     }
 
     .searchbox2 {
@@ -107,9 +107,9 @@
         width: 80vw;
     }
 
-    .option {
+    /* .option {
         max-width: 100%;
         width: fit-content;
-    }
+    } */
 
 }

@@ -38,7 +38,7 @@ function showPosition(position) {
 }
 
 function setpresent(value) {
-  place.innerHTML = `${value.name}`;
+  place.innerHTML = `${value.name}, ${value.country}`;
   windspeed.innerHTML = `Wind Speed: ${value.windspeed}km/hr`;
   humidity.innerHTML = `Humidity: ${value.humidity}%`;
   temperature.innerHTML = `${value.temp}&#176C`;
@@ -101,9 +101,9 @@ function ll() {
       // console.log(ind);
       // console.log(tata[ind]);
 
-      value = { "name": name, 
-                // "region": tata.location.region, 
-                // "country":tata.location.country, 
+      value = { "name": tata.location.name, 
+                "region": tata.location.region, 
+                "country":tata.location.country, 
                 "windspeed": tata.current.wind_kph, 
                 "humidity": tata.current.humidity, 
                 "temp": tata.current.temp_c, 
