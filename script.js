@@ -38,7 +38,7 @@ function showPosition(position) {
 }
 
 function setpresent(value) {
-  place.innerHTML = `${value.name}, ${value.region}`;
+  place.innerHTML = `${value.name}`;
   windspeed.innerHTML = `Wind Speed: ${value.windspeed}km/hr`;
   humidity.innerHTML = `Humidity: ${value.humidity}%`;
   temperature.innerHTML = `${value.temp}&#176C`;
@@ -87,13 +87,13 @@ function ll() {
           var lat = data[ind].lat;
           var lon = data[ind].lon;
           console.log(`${data[ind].lat},${data[ind].lon}`);
-          func(lat,lon,ind);
+          func(lat,lon,ind,element.innerHTML);
 
         })
       }
     }, 1000)
   })
-  function func(lat,lon,ind) {
+  function func(lat,lon,ind,name) {
     fetch(`https://api.weatherapi.com/v1/current.json?key=${API}&q=${lat},${lon}&aqi=no`).then(res => res.json()).then(tata => {
 
       console.log(tata);
@@ -101,9 +101,9 @@ function ll() {
       // console.log(ind);
       // console.log(tata[ind]);
 
-      value = { "name": tata.location.name, 
-                "region": tata.location.region, 
-                "country":tata.location.country, 
+      value = { "name": name, 
+                // "region": tata.location.region, 
+                // "country":tata.location.country, 
                 "windspeed": tata.current.wind_kph, 
                 "humidity": tata.current.humidity, 
                 "temp": tata.current.temp_c, 
