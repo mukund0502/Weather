@@ -1,24 +1,20 @@
-body{
-    
-}
 .viewport {
-    /* 100vh; */
-    /* width: 100vw; */
+
     width: 100vw;
     background-image: url(./aaa.jpg);
-    background-size: cover; 
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    /* width: 100vw; */
-    
-    /* background-size: auto; */
+    background-size: cover;
+    height: fit-content;
+    transition: all;
+    transition-duration: 30ms;
+
 }
-.op:hover{
+
+.op:hover {
     text-decoration: underline;
     color: brown;
 }
-#option{
+
+#option {
     position: absolute;
     left: 0px;
     right: 0px;
@@ -32,81 +28,88 @@ body{
     margin: 0px auto;
 
 }
-.op{
 
-    /* width: fit-content; */
+.op {
+
     margin-top: 10px;
     overflow-x: auto;
     padding: 3px;
     padding: 3px 60px;
-    /* margin: 2px; */
-    /* border-radius: 5px; */
-    /* background-color: rgba(55, 119, 141, 0.9); */
-    /* backdrop-filter: blur(8px); */
-    /* border-radius: 100px; */
-    /* width: 22vw; */
-    /* width: 30vw; */
-    
 }
+/* #option{
+    overflow: auto;
+    height: 50vh;
+} */
 
+.box{
+    width: 200px;
+    height: 100px;
+    background-color: aqua;
+    margin: 20px;
+}
 .present {
-
     width: 100vw;
     height: 100vh;
 }
 
 .pastandfuture {
-    width: 30vw;
-    height: 95vh;
-    margin-left: auto;
+    border: 2px solid;
+    overflow-y: hidden;
+    overflow-x: auto;
+    scroll-margin: 23px;
+    margin: 10px auto;
+    width: 80vw;
+    display: flex;
+    /* padding: 20px; */
+    /* scroll-behavior: smooth; */
+    /* overflow: auto; */
 }
 
-#temperature {
-
-}
 
 .cards {
-    /* background-color: rgb(159, 159, 144,0.2); */
+
+    border-radius: 20px;
     backdrop-filter: blur(10px);
     background-color: rgba(153, 170, 185, 0.3);
+    width: 400px;
+    height: 200px;
+    padding: 30px;
 }
 
 .data {
     backdrop-filter: blur(10px);
 }
 
-.btn{
+.btn {
     top: 60px;
 }
 
 .searchbox {
     background-color: rgba(207, 225, 225, 0.5);
     backdrop-filter: blur(10px);
+    overflow: auto;
 }
 
 
 @media only screen and (max-width: 600px) {
     .viewport {
-        /* display: flex; */
         flex-direction: column;
     }
-    .present{
+
+    .present {
         margin: auto;
         width: 90vw;
     }
-    .searchbox2{
+
+    .searchbox2 {
         margin: auto;
         position: relative;
         width: 80vw;
     }
-    .option{
+
+    .option {
         max-width: 100%;
         width: fit-content;
     }
 
-
-    /* .pastandfuture{
-        margin: auto;
-        width: 90vw;
-    } */
 }

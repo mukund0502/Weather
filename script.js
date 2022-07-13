@@ -7,6 +7,7 @@ var windspeed = document.getElementById("windspeed");
 var btn = document.getElementById("btn");
 var search = document.getElementById("searchh");
 var option = document.getElementById("option");
+var viewport = document.getElementById("view");
 var op = document.getElementsByClassName("op");
 
 var API = 'c43b5d7ce55249009df105521220607';
@@ -14,8 +15,9 @@ var API = 'c43b5d7ce55249009df105521220607';
 if (navigator.geolocation) {
   navigator.geolocation.getCurrentPosition(showPosition);
 } else {
-  console.log("Geolocation is not supported by this browser.");
+  alert("Allow location for the realtime weather update.")
 }
+
 function showPosition(position) {
   console.log("Latitude: " + position.coords.latitude +
     "  Longitude: " + position.coords.longitude);
@@ -42,6 +44,19 @@ function setpresent(value) {
   temperature.innerHTML = `${value.temp}&#176C`;
   maushamtype.innerHTML = `${value.type}`;
   icon.src = value.icon;
+  if (value.type == "Sunny") {
+    viewport.style.backgroundImage = "url(./sunny.jpg)";
+  }
+  else if (value.type.includes("cloudy")||value.type.includes("Cloudy")) {
+    viewport.style.backgroundImage = "url(./cloudy.jpg)";
+  }
+  else if (value.type.includes("rain")||value.type.includes("Rain")) {
+    viewport.style.backgroundImage = "url(./rain2.jpg)";
+  }
+  else {
+    viewport.style.backgroundImage = "url(./aaa.jpg)";
+    
+  }
 }
 var opp = [];
 btn.addEventListener("click", () => {
@@ -52,7 +67,6 @@ search.addEventListener("keyup",()=>{
   setTimeout(ll,5);
 })
 
-// search.addEventListener("")
 function ll() {
   option.innerHTML = "";
   var placename = search.value;
@@ -60,7 +74,7 @@ function ll() {
   fetch(`https://api.weatherapi.com/v1/search.json?key=c43b5d7ce55249009df105521220607&q=${placename}`).then(res => res.json()).then(data => {
     console.log(data);
     var push = "";
-    for (let index = 0; index < 8; index++) {
+    for (let index = 0; index < 7; index++) {
       push += `<div class="text-center cursor-pointer op text-xl">${data[index].name}, ${data[index].region},${data[index].country}</div> `
       option.innerHTML = push;
 
@@ -74,8 +88,6 @@ function ll() {
           var lon = data[ind].lon;
           console.log(`${data[ind].lat},${data[ind].lon}`);
           func(lat,lon,ind);
-
-
 
         })
       }
@@ -100,7 +112,7 @@ function ll() {
 
       setpresent(value);  
       option.innerHTML = "";
-      search.innerHTML = "";
+      search.value = "";
     })
   }
 

@@ -14,12 +14,12 @@
 </head>
 
 <body>
-    <div class="viewport bg-slate-200">
+    <div class="viewport bg-slate-200" id="view">
         
         <div class="present">
-            <div class="seachbox flex flex-col">
-                <div class=" searchbox2 m-auto flex flex-row">
-                    <input type="text" name="search" placeholder="Search" id="searchh" class="shadow-lg searchbox relative left-5 font-thin text-2xl px-4 pr-10 py-2 w-full mt-16 mb-2 rounded-full outline-none">
+            <div class="seachcards flex flex-col">
+                <div class=" searchcards2 m-auto flex flex-row">
+                    <input type="text" name="search" placeholder="Search" id="searchh" class="shadow-lg searchcards relative left-5 text-2xl px-4 pr-10 py-2 w-full mt-16 mb-2 rounded-full outline-none">
                     <div class="btn w-fit p-2 text-xl align-middle relative h-fit right-5" id="btn"><i class="fa fa-search"></i></div>
 
                 </div>
@@ -29,83 +29,81 @@
                 </div>
             </div>
             <div class="data shadow-2xl mx-auto rounded-3xl py-4 pb-10 px-10 w-fit my-10 ">
-                <div class=" contai my-10  text-4xl font-thin text-center" id="place">
-                    New Delhi, India 
+                <div class=" contai my-10  text-4xl text-center" id="place">
+                    NA 
                 </div>
                 <div class=" contai my-4 text-3xl w-1/2" id="temperature">
-                    45&#176C
+                    NA
                 </div>
-                <img src="./cloudy.png" class="w-1/4 absolute top-28 right-8" alt="" id="icon">
-                <!-- <div class="tempnicon flex flex-row">
-                    <div class=" contai my-4 text-2xl w-1/2" id="temperature">
-                        45 C
-                    </div>
-                    <div id="icon" class="w-1/2">
-                        <img src="./cloudy.png" class="w-1/4 ml-auto"   alt="">
-                    </div>
-                </div> -->
+                <img src="" class="w-1/4 absolute top-28 right-8" alt="NA" id="icon">
                 
                 <div class=" contai my-1 text-xl" id="maushamtype">
-                    cloudy
+                    NA
                 </div>
                 <div class=" contai my-1 text-xl" id="humidity">
-                    Humidity: 69%
+                    Humidity: NA
                 </div>
                 <div class=" contai my-1 text-xl" id="windspeed">
-                    Wind Speed: 45km/h
+                    Wind Speed: NA
                 </div>
             </div>
         </div>
-        <!-- <div class="pastandfuture overflow-auto  ">
-            <div class="cards w-72 h-52 my-6 mx-auto rounded-xl p-3 text-lg ">
-                <img src="cloudy.png" class="absolute right-2  h-1/2" alt="">
-                <div class=" h-1/2"><p class="my-3 text-4xl">32&#176C</p></div>
-                <p>Cloudy</p>
-                <p>Humidiy: 50% </p>
-                <p>windspeed: 14km/h</p>
+        <!-- <div class="pastandfuture">
+            <div class="cards m-4">
+                <div class="tempnicon flex flex-row h-1/2">
+                    <div class="temp text-3xl">
+                        32c
+                    </div>
+                    <div class="img w-1/2">
+                        <img src="" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="text-lg">type</div>
+                <div class="text-lg">humidity</div>
+                <div class="text-lg">windspeed</div>
+
+            </div><div class="cards m-4">
+                <div class="tempnicon flex flex-row h-1/2">
+                    <div class="temp text-3xl">
+                        32c
+                    </div>
+                    <div class="img w-1/2">
+                        <img src="" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="text-lg">type</div>
+                <div class="text-lg">humidity</div>
+                <div class="text-lg">windspeed</div>
+
+            </div><div class="cards m-4">
+                <div class="tempnicon flex flex-row h-1/2">
+                    <div class="temp text-3xl">
+                        32c
+                    </div>
+                    <div class="img w-1/2">
+                        <img src="" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="text-lg">type</div>
+                <div class="text-lg">humidity</div>
+                <div class="text-lg">windspeed</div>
+
+            </div><div class="cards m-4">
+                <div class="tempnicon flex flex-row h-1/2">
+                    <div class="temp text-3xl">
+                        32c
+                    </div>
+                    <div class="img w-1/2">
+                        <img src="" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="text-lg">type</div>
+                <div class="text-lg">humidity</div>
+                <div class="text-lg">windspeed</div>
+
             </div>
-            <div class="cards w-72 h-52 my-6 mx-auto rounded-xl p-3 text-lg">
-                <img src="cloudy.png" class="absolute right-2  h-1/2" alt="">
-                <p class="text-4xl h-1/2">32&#176C</p>
-                <p>Cloudy</p>
-                <p>Humidiy: 50% </p>
-                <p>windspeed: 14km/h</p>
-            </div>
-            <div class="cards w-72 h-52 my-6 mx-auto rounded-xl p-3 text-lg">
-                <img src="cloudy.png" class="absolute right-2  h-1/2" alt="">
-                <p class="text-4xl h-1/2">32&#176C</p>
-                <p>Cloudy</p>
-                <p>Humidiy: 50% </p>
-                <p>windspeed: 14km/h</p>
-            </div>
-            <div class="cards w-72 h-52 my-6 mx-auto rounded-xl p-3 text-lg">
-                <img src="cloudy.png" class="absolute right-2  h-1/2" alt="">
-                <p class="text-4xl h-1/2">32&#176C</p>
-                <p>Cloudy</p>
-                <p>Humidiy: 50% </p>
-                <p>windspeed: 14km/h</p>
-            </div>
-            <div class="cards w-72 h-52 my-6 mx-auto rounded-xl p-3 text-lg">
-                <img src="cloudy.png" class="absolute right-2  h-1/2" alt="">
-                <p class="text-4xl h-1/2">32&#176C</p>
-                <p>Cloudy</p>
-                <p>Humidiy: 50% </p>
-                <p>windspeed: 14km/h</p>
-            </div>
-            <div class="cards w-72 h-52 my-6 mx-auto rounded-xl p-3 text-lg">
-                <img src="cloudy.png" class="absolute right-2  h-1/2" alt="">
-                <p class="text-4xl h-1/2">32&#176C</p>
-                <p>Cloudy</p>
-                <p>Humidiy: 50% </p>
-                <p>windspeed: 14km/h</p>
-            </div>
-            <div class="cards w-72 h-52 my-6 mx-auto rounded-xl p-3 text-lg">
-                <img src="cloudy.png" class="absolute right-2  h-1/2" alt="">
-                <p class="text-4xl h-1/2">32&#176C</p>
-                <p>Cloudy</p>
-                <p>Humidiy: 50% </p>
-                <p>windspeed: 14km/h</p>
-            </div>
+            
+            
         </div> -->
     </div>
 </body>
